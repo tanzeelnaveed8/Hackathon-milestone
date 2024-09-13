@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Builder</h1>
+        
+        <!-- Form for user input -->
+        <form id="resumeForm">
+            <section>
+                <h2>Personal Information</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"  required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"  required>
+
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" >
+            </section>
+
+            <section>
+                <h2>Experience</h2>
+                <label for="experienceTitle">Job Title:</label>
+                <input type="text" id="experienceTitle" name="experienceTitle">
+
+                <label for="experienceCompany">Company:</label>
+                <input type="text" id="experienceCompany" name="experienceCompany" >
+
+                <label for="experienceDates">Dates:</label>
+                <input type="text" id="experienceDates" name="experienceDates">
+            </section>
+
+            <section>
+                <h2>Education</h2>
+                <label for="degree">Degree:</label>
+                <input type="text" id="degree" name="degree" >
+
+                <label for="institution">Institution:</label>
+                <input type="text" id="institution" name="institution" >
+
+                <label for="graduationYear">Graduation Year:</label>
+                <input type="text" id="graduationYear" name="graduationYear" placeholder="2024">
+            </section>
+            <section>
+                <h2>Skills</h2>
+                <label for="degree">Add Your Skills:</label>
+                <input type="text" id="degree" name="degree" placeholder="...">
+            </section>
+
+            <button type="button" onclick="generateResume()">Generate Resume</button>
+        </form>
+
+        <!-- Preview Section -->
+        <div id="resumePreview" class="resume-preview">
+            <h2>Resume Preview</h2>
+            <div id="resumeContent"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
